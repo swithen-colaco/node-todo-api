@@ -21,7 +21,7 @@ const {MongoClient, ObjectID} = require('mongodb');
       console.log(JSON.stringify(docs, undefined, 2));
     }, (err) => {
       console.log('Unable to fetch Todos', err);
-    })
+    });
 
     db.close();
   });
